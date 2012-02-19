@@ -42,6 +42,7 @@ end
 
 # Rails 3.X Template
 if defined?(ActionView) && defined?(Rails) && Rails.version =~ /^3/
+  puts "RAILS 3"
   module ActionView
     module Template::Handlers
       class Rabl
