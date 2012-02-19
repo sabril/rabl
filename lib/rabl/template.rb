@@ -41,7 +41,7 @@ if defined?(ActionView) && defined?(Rails) && Rails.version =~ /^2/
 end
 
 # Rails 3.X Template
-if defined?(ActionView) && defined?(Rails) && Rails.version =~ /^3/
+if defined?(ActionView) && defined?(Rails) && (Rails.version =~ /^3/) == 0
   puts "RAILS 3"
   module ActionView
     module Template::Handlers
